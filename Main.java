@@ -25,12 +25,11 @@ public class Main{
 
         double[][] h = new double[8][11];
 
+        final int[] temp = {2, 6, 14, 16};
 
         for(int i = 0; i < 8; i++){ // calc values of h
             for(int j = 0; j < 11; j++){
                 double xj = x[j];
-
-                int[] temp = {2, 6, 14, 16};
 
                 if(q[i] == 10){
                     double base = Math.atan(Math.sin(xj) + 1/3) / Math.atan(Math.cos(xj));
